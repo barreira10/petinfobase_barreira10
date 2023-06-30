@@ -64,6 +64,10 @@ function openCreateModal() {
     const createPost = document.querySelector('.create--post')
     const createPostModal = document.querySelector('#create--post__modal')
     createPost.addEventListener('click', () => {
+        const input_title = document.getElementById('title')
+        const input_content = document.getElementById('content')
+        input_title.value = "";
+        input_content.value = "";
         openModal(createPostModal)
         closeCreateModal()
     })
