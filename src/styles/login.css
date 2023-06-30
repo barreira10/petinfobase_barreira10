@@ -121,6 +121,35 @@ body {
     font-size: 1rem;
     cursor: pointer;
 }
+.center{
+    display: flex;
+    justify-content: center;
+}
+.spinner {
+    margin-top: 2rem;
+
+    height: 50px;
+    width: 50px;
+  
+    border-top: 2px solid var(--sucess100);
+    border-radius: 50%;
+  
+    animation: spin 1s linear infinite;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 .register {
     display: flex;
